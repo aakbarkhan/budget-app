@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Expenditures</h1>
+
+<div id="expenditures">
+<div class="category-name">
+<p> Category Icon:
+<%= @category.icon%>
+Category Name:
+<%= @category.name%>
+</p>
+<p><%= @total_amount%> </p>
+</div>
+  <% @expenditures.each do |expenditure| %>
+    <%= render expenditure %>
+    <p>
+      <%# <%= link_to "Show this expenditure", expenditure.name %> %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Add New expenditure", new_category_expenditure_path %>
