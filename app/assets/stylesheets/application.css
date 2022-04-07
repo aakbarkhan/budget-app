@@ -14,11 +14,84 @@
  *= require_self
  */
  .category-name {
-     color: red;
-     width: 500px;
-     border: 1px solid black;
+   color: red;
+   width: 500px;
+   border: 1px solid black;
  }
 
  #categories {
-    border: 1px solid black;
+   border: 1px solid black;
  }
+
+ .heading {
+   font-size: 50px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+ }
+
+ .buttons { 
+   display: flex; 
+   flex-direction: column; 
+   margin: 20px 4px;
+  }
+
+  .parent {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .notice, .alert {
+    display: none;
+  }
+
+  .navbar-nav {
+    background-color: aqua;
+    width: auto;
+  }
+
+  #user_name, #user_email, #user_password, #user_password_confirmation {
+    width: 100%;
+    margin: 5px;
+    padding: 0;
+  }
+
+  .login, .signup {
+    width: 100px;
+    margin: 2px;
+  }
+
+  .register, .loginpage, .category {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 196);
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .cate, .heading-cate {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  .cate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .category-page {
+    margin: 2px;
+  }
+
+  .render-list, .cate-name {
+    display: flex;
+  }
+
+  .cate-name {
+    justify-content: space-between;
+  }

@@ -1,15 +1,17 @@
 <p style="color: green"><%= notice %></p>
-  <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
- <div id="categories">
-  <a href = "/categories/<%= category.id %>/expenditures" >
-    <%= render category %>
- <p> Total amount:<%= category.total_funds %> </p>
-  <% end %>
+  <div class="category">
+      <h1 class="heading-cate">CATEGORIES</h1>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "login cate" %>
   </div>
-</div>
+  <% @categories.each do |category| %>
+    <div id="categories" class="category-page">
+        <a href = "/categories/<%= category.id %>/expenditures" >
+      <div class="cate-name">
+        <%= render category %>
+      <p>User Name:<%= @user.name %> </p>
+      <p> Total amount:$<%= category.total_funds %> </p>
+      </div>
+    </div>
+  <% end %>
 
-<%= link_to "Add New category", new_category_path %>
+<%= link_to "Add New category", new_category_path, class: "btn btn-success" %>
