@@ -15,8 +15,9 @@
  */
 .category-name {
   color: red;
-  width: 500px;
   border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #categories {
@@ -26,7 +27,6 @@
 .heading {
   font-size: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
 }
 
 .buttons {
@@ -99,8 +99,94 @@
 .render-list,
 .cate-name {
   display: flex;
+  align-items: center;
 }
 
-.cate-name {
+a {
+  text-decoration: none;
+}
+
+.render-list,
+.user-name,
+.user-total {
+  width: 31.22%;
+  margin: 0 5px 0 5px;
+  text-align: center;
+}
+
+.user-name {
+  text-align: center;
+}
+
+.user-total {
+  text-align: right;
+}
+
+.cate-img {
+  width: 100px;
+}
+
+.category-bottom {
+  position: fixed;
+  opacity: 0.8;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.icon-back {
+  color: antiquewhite;
+  display: inline;
+  text-decoration: none;
+}
+
+.bottom {
+  width: 100%;
+}
+
+.exp {
+  display: flex;
+  background-color: blue;
+  text-align: center;
+}
+
+.heading-exp {
+  width: 70%;
+  text-align: center;
+}
+
+.exp-each {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border: 2px solid black;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  border-radius: 15px;
+  background-color: #60b523 !important;
+}
+
+.exp-form {
+  background-color: blue;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#expenditure_name,
+#expenditure_amount,
+#category_name,
+#category_icon {
+  width: 100%;
+}
+
+.back-tag {
+  color: aliceblue;
 }
