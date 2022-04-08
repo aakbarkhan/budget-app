@@ -5,7 +5,7 @@ RSpec.describe 'Category', type: :feature do
     before(:each) do
       visit user_session_path
       @aku = User.create!(name: 'aku', email: 'aku@gmail.com', password: '123456',
-                            password_confirmation: '123456')
+                          password_confirmation: '123456')
 
       within('#new_user') do
         fill_in 'Email', with: 'aku@gmail.com'
