@@ -1,12 +1,13 @@
-<div id="<%= dom_id expenditure %>">
+<div id="<%= dom_id expenditure %>" class="exp-each">
+<p>
+  <%= @category.name.upcase%>
+</p>
   <p>
-    <strong>Name:</strong>
     <%= expenditure.name %>
   </p>
 
   <p>
-    <strong>Amount:</strong>
-    <%= expenditure.amount %>
+    $<%= expenditure.amount %>
   </p>
 
 </div>
