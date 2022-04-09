@@ -20,9 +20,6 @@ class ExpendituresController < ApplicationController
 
   # GET /expenditures/1/edit
   def edit; end
-
-  
-
   def create
     @expenditure = Expenditure.new(expenditure_params)
     @expenditure.user_id = current_user.id
@@ -40,7 +37,6 @@ class ExpendituresController < ApplicationController
       end
     end
   end
- 
   # DELETE /expenditures/1 or /expenditures/1.json
   def destroy
     @expenditure = Expenditure.find(params[:id])

@@ -29,8 +29,6 @@ class CategoriesController < ApplicationController
     end
     redirect_to root_path
   end
-
-  
   # DELETE /categories/1 or /categories/1.json
   def destroy
     @category = Category.find(params[:id])
