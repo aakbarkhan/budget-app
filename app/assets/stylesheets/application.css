@@ -101,6 +101,7 @@
   display: flex;
   align-items: center;
   color: #434c55;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Proxima Nova Light;
 }
 
@@ -158,6 +159,7 @@ a {
 .heading-exp {
   width: 70%;
   text-align: center;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: Proxima Nova Light;
   color: aliceblue;
 }
