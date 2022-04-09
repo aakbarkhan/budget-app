@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   authenticated :user do
     root to: "categories#index", as: :authenticated_root
   end
-  resources :categories do
+  resources :categories,  only: [:index, :new, :create, :show] do
     resources :expenditures
   end
 
