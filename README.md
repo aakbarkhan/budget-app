@@ -51,6 +51,7 @@ To get a local copy up and running follow these simple example steps.
 - Run rspec spec to run all the test cases, and
 - Run rspec spec/name_of_test_file.rb to run test cases individually.
 
+
 ## Authors
 
 
@@ -75,6 +76,10 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Heartfelt thanks to Microverse
+
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+
+- The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) credit to the author.
 
 ## 📝 License
 
