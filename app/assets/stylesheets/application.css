@@ -101,6 +101,7 @@
   display: flex;
   align-items: center;
   color: #434c55;
+  font-family: Proxima Nova Light;
 }
 
 a {
@@ -157,6 +158,8 @@ a {
 .heading-exp {
   width: 70%;
   text-align: center;
+  font-family: Proxima Nova Light;
+  color: aliceblue;
 }
 
 .exp-each {
