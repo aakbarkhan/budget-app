@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # get 'users/index'
-  # get 'users/new'
   devise_for :users
   unauthenticated :user do
     root to: "users#index"

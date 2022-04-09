@@ -21,17 +21,7 @@ class ExpendituresController < ApplicationController
   # GET /expenditures/1/edit
   def edit; end
 
-  # POST /expenditures or /expenditures.json
-  # def create
-  #   @category = Category.find(params[:category_id])
-  #   @expenditure = current_user.expenditures.new(expenditure_params)
-  #   if @expenditure.save
-  #       flash[:notice] = 'Category was successfully created.'
-  #   else
-  #     flash.now[:notice] = 'Failed to created'
-  #   end
-  #     redirect_to category_expenditures_url
-  # end
+  
 
   def create
     @expenditure = Expenditure.new(expenditure_params)
@@ -50,19 +40,7 @@ class ExpendituresController < ApplicationController
       end
     end
   end
-  # PATCH/PUT /expenditures/1 or /expenditures/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @expenditure.update(expenditure_params)
-  #       format.html { redirect_to expenditure_url(@expenditure), notice: "Expenditure was successfully updated." }
-  #       format.json { render :show, status: :ok, location: @expenditure }
-  #     else
-  #       format.html { render :edit, status: :unprocessable_entity }
-  #       format.json { render json: @expenditure.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
+ 
   # DELETE /expenditures/1 or /expenditures/1.json
   def destroy
     @expenditure = Expenditure.find(params[:id])
