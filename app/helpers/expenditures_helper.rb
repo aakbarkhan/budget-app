@@ -1,6 +1,10 @@
 module ExpendituresHelper
   def example_img(category)
-    img_example = 'https://files.slack.com/files-pri/T02KUTEGASX-F03B7A2L2KB/user.png'
-    category.icon.present? ? category.icon = img_example : img_example
+    img_example = 'https://i.ibb.co/syp5dN2/default.png'
+    if category.icon.present? and category.icon.last(4) == '.png'
+      category.icon
+    else
+      img_example
+    end
   end
 end
