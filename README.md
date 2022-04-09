@@ -18,7 +18,7 @@
 ## ## Presentation Link
 [Presentation Video]
 #### Demo Link
-[Demo Link]
+[App Link](https://bajat.herokuapp.com/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
